@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #grid{
+     border: 5px solid pink;
+     display: grid;
+     /* display태그는 태그가 표시되는 방법을 변경한다
+        세로 단위의 구분은 colums다 1fr은 나머지 자동조정 프레임 */
+     grid-template-columns: 150px 1fr;   
+    }
+     div{
+        border: 5px solid gray;
+     }   
+    </style>
+</head>
+<body>
+ <div id="grid">   
+    <div>NAVIGATION</div>
+    <div> css사용 시 효율성 상승,
+        중복의 제거->유지보수가 쉽고 가독성 상승 
+        정보와 디자인의 분리-> html이 정보에 전념하게 도와줌-->
+       </div>   
+       <!-- 디자인 목적상 무의미인 태그 division,
+            div태그는 기본적으로 블록전체
+            span은 인라인요소다 
+            두 요소를 나린히 놓기 위해 두 태그를 감싸는 부모 필요-->
+
+       <!-- 그리드를 써도 되는지
+        https://caniuse.com/?search=grid 
+         -->
+ </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+    body{margin:0;}
+    #active{
+    color: red;
+    }
+
+    .saw{
+    color: black;
+    }
+
+    a {
+       color: black;
+       text-decoration: none;
+    }
+     /* 선택자 서열 태그(모든것)<class(특정)<id(유일무이)
+        같은 서열이라면 최근 것이 우선시됨 */
+    h1{ font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding:20px;
+    }
+    h2{ font-size: 30px;
+        margin:0;
+        padding:20px;
+    }
+    ol{border-right: 1px solid gray;
+       width:100px; 
+       margin:0; 
+       padding:20px;
+       padding-left: 40px;
+    }
+   img{max-width:25%; 
+       max-height:25%;
+       display: block;
+       margin: 0px auto;  }
+   iframe{max-width:100%; 
+       max-height:100%;
+       display: block;
+       margin: 0px auto;  }
+    #grid{
+       display: grid;
+       grid-template-columns: 200px 1fr;
+    }
+    #article{
+       padding-right: 25px;
+    }
+    /* a 선택자 selector 
+       {} 선언문, 효과 Declaration
+       color: 속성 Property 
+       black; 속성가치 Property Value
+       Property는 때에 맞춰서 찾기
+
+    웹페이지에 css효과를 주는 법은 스타일태그나 
+                                 스타일속성 씀 
+                                 효과를 지정한 후에는 세미콜론*/
+   @media(max-width:800px){
+       #grid{
+       display: block;
+    }
+    ol{border-right: none;
+   }
+   h1{ border-bottom: none;}
+   body{margin:20PX;}}
